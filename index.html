@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPCIONAL Wireframe a HTML (M.2) Exercici 2 y 3</title>
+
+    <!-- FONT AWESOME-->
+    <!-- Se utiliza llamándolo como una clase "<i class="fas fa-camera"></i>" Con fas, fab, etc indicando estilo y el resto el icono -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- FONT OSWALD  de Google Fonts-->
+    <!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <!-- Enlace al fichero de estilos CSS -->
+    <link rel="stylesheet" href="./styles/styles.css">
+
+</head>
+<body>
+    <!-- Contenedor que agrupa todos los elementos de la página para definir algún parámetro general -->
+    <div class="container">
+
+        <!-- Cabecera para logo y enlace a RRSS -->
+        <header>
+            <div class="logo">
+                <img src="images/logo_small.png" alt="Huella Cero Gourmet">
+            </div>
+
+            <div class="social">
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+            </div>
+    
+        </header>
+        
+        <!-- Sección dedicada al menu/navegación -->
+        <nav>
+            <ul class="nav-lista">
+                <li>
+                    <a href="#">Empresa</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+                <li>
+                    <a href="#">Profesionales</a>
+                </li>
+                <li>
+                    <a href="#">Productores</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Parte principal de la página con dos secciones: destacados y principal -->
+        <article>
+            <section class="destacados">
+                <div>
+                    <img src="images/cuchara.jpg" alt="destacado cuchara">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <a href="#" class="boton">Accedir</a> <!-- Botón-->
+                </div>
+                <div>
+                    <img src="images/cocinando.jpg" alt="destacado cuchara">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <a href="#" class="boton">Accedir</a> <!-- Botón-->
+                </div>
+                <div>
+                    <img src="images/brocheta.jpg" alt="destacado cuchara">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <a href="#" class="boton">Accedir</a> <!-- Botón-->
+                </div>
+            </section>
+
+            <section class="principal">
+                <div class="principal-container">
+                    <div class="articulo">
+                        <img src="images/panes.jpg" alt="destacado panes">
+                        <div>
+                            <h4>Lorem, ipsum dolor.</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque aut ab enim eos. Natus rem delectus incidunt nesciunt.</p>
+                            <a href="#">Veure m&eacute;s <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="articulo">
+                        <img src="images/brocheta.jpg" alt="destacado cuchara">
+                        <div>
+                            <h4>Lorem ipsum dolor sit amet.</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ea tempore saepe vitae, corporis veniam.</p>
+                            <a href="#">Veure m&eacute;s <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="articulo">
+                        <img src="images/cocinando.jpg" alt="articulo cocinando">
+                        <div>
+                            <h4>Lorem, ipsum dolor.</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor magni laudantium, quibusdam repellendus impedit voluptates harum distinctio dolorum illum sapiente!</p>
+                            <a href="#">Veure m&eacute;s <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="articulo">
+                        <img src="images/cuchara.jpg" alt="articulo cocinando">
+                        <div>
+                            <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur incidunt doloremque explicabo ipsa ea sequi maxime impedit quibusdam.</p>
+                            <a href="#">Veure m&eacute;s <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </article>
+    
+        <!-- Espacio reservado para pie de página -->
+        <footer>
+<!--            <?php echo 'HOLAAAA';?>
+            <?php include './scripts/footer.php';?>
+-->
+            <div class="footer-container">
+                <div>
+                    <p>&copy; HC Gourmet 2021</p>
+                </div>
+                <div>
+                    <p>Tfno: 699999999</p>
+                    <p>Direcci&oacute;n: Xxxxxx</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

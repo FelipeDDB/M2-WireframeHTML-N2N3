@@ -1,0 +1,164 @@
+/* Color de fondo de toda la página y quitamos márgenes por defecto */
+body {
+    background: #e6e7e9;
+    margin: 0;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+/* Elimina subrayado enlaces */
+a {
+    text-decoration: none;
+}
+
+/* Estilo global a todo el contenido de la página */
+.container {
+    width: 1000px;
+    margin: 20px auto; /* La página tiene un margen arriba/abajo y centrado horizontalmente */
+}
+
+/* Estilo cabecera */
+/* 60px altura caja + 30+30px de padding interior = 120px total del header */
+header {
+    height: 60px;
+    background: url('../images/hamburguesapeq.jpg') no-repeat;
+    padding: 30px;
+    margin-bottom: 20px; /* Margen vertical */
+    align-items: center; /* Alinea los elementos en el centro */
+    display: flex; /* Posiciona los elementos uno al lado del otro */
+    justify-content: space-between; /* distribuye en el espacio */
+}
+
+/* Estilo sección para ubicar el logo */
+.logo img {
+    height: 60px;
+}
+
+/* agrupa lo que serán iconos de rrss */
+.social{
+    display: flex; /* Posiciona los elementos uno al lado del otro */
+    margin-right: -10px; /* El margen de la derecha del header es 10px menor (20) que el de la izquierda (30) */
+    font-size: 40px;
+    margin: 5px;
+}
+
+.social a {
+    margin: 5px;
+    color: #4b4b4d;
+}
+
+
+/* Estilo menú navegación */
+.nav-lista {
+    background: #97989a;
+    padding-inline-start: 0; /* elimina margen izquierdo que parece por defecto */
+    list-style: none; /* elimina bullets de las opciones de menú */
+    display: flex; /* coloca los elementos una al lado del otro */
+}
+
+.nav-lista li {
+    height: 60px;
+    width: 200px;
+    border-left: 1px solid #e6e7e9;    
+    border-right: 1px solid #e6e7e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-lista li a {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.nav-lista li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/* Estilo de la zona principal de la página que abarca rejilla y sección principal*/
+article{
+    margin: 25px 0; /* Margen vertical respecto a navegación y footer */
+}
+/* Estilo sección destacados como GRID de 3 celdas */
+.destacados {
+    margin-bottom: 25px; /* Margen vertical de cada sección */
+    display: grid; /* distribución como rejilla */
+    grid-template-columns: repeat(3, 1fr); /* Es lo mismo que poner 1fr 1fr 1fr 1fr */
+    gap: 8px;
+}
+/* Fondo de cada celda */
+.destacados div {
+    background: #858688;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.destacados img {
+    margin-top: 10px;
+    width: 310px;
+}
+.destacados h3 {
+    margin: 0;
+}
+
+.boton {
+    cursor: pointer;
+    display: inline-block;    
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    margin: 10px 0;
+}
+.boton:hover {
+    opacity: .6;
+}
+
+/* Estilo sección artículo principal */
+.principal {
+    background: #858688;
+}
+.principal-container {
+    background: #4b4b4d;
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.articulo {
+    display: flex; /* Posiciona los elementos uno al lado del otro */
+    align-items: center; /* Alinea los elementos en el centro */
+    margin: 15px;
+}
+.articulo img {
+    width: 40%;
+}
+.articulo div {
+    margin: 10px;
+}
+.articulo h4 {
+    margin: 0 auto;
+}
+.articulo p {
+    margin: 0 auto;
+    font-size: 14px;
+}
+.articulo a {
+    color: #ffffff;
+    font-style: italic;
+}
+
+/* Estilo footer */
+footer {
+    background: #4b4b4d;
+    height: 70px;
+    font-size: 12px;
+}
+.footer-container {
+    width: 60%;
+    margin: auto;
+    display: flex; /* Posiciona los elementos uno al lado del otro */
+    align-items: center; /* Alinea los elementos en el centro */
+    justify-content: space-between; /* distribuye en el espacio */
+    color: #e6e7e9;
+}
