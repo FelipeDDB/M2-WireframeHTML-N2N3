@@ -4,6 +4,7 @@ body {
     margin: 0;
     color: #fff;
     font-family: 'Oswald', sans-serif;
+    /* font-size: 16px;  Por defecto ya es 16px*/
 }
 /* Elimina subrayado enlaces */
 a {
@@ -12,7 +13,7 @@ a {
 
 /* Estilo global a todo el contenido de la página */
 .container {
-    width: 1000px;
+    width: 80%;
     margin: 20px auto; /* La página tiene un margen arriba/abajo y centrado horizontalmente */
 }
 
@@ -20,7 +21,7 @@ a {
 /* 60px altura caja + 30+30px de padding interior = 120px total del header */
 header {
     height: 60px;
-    background: url('../images/hamburguesapeq.jpg') no-repeat;
+    background: url('../images/hamburguesapeq.jpg') center/cover;
     padding: 30px;
     margin-bottom: 20px; /* Margen vertical */
     align-items: center; /* Alinea los elementos en el centro */
@@ -30,14 +31,14 @@ header {
 
 /* Estilo sección para ubicar el logo */
 .logo img {
-    height: 60px;
+    width: 80%;
 }
 
 /* agrupa lo que serán iconos de rrss */
 .social{
     display: flex; /* Posiciona los elementos uno al lado del otro */
     margin-right: -10px; /* El margen de la derecha del header es 10px menor (20) que el de la izquierda (30) */
-    font-size: 40px;
+    font-size: 2.5em;
     margin: 5px;
 }
 
@@ -57,7 +58,7 @@ header {
 
 .nav-lista li {
     height: 60px;
-    width: 200px;
+    width: 20%;
     border-left: 1px solid #e6e7e9;    
     border-right: 1px solid #e6e7e9;
     display: flex;
@@ -66,7 +67,7 @@ header {
 }
 
 .nav-lista li a {
-    font-size: 20px;
+    font-size: 1.5em;
     color: #ffffff;
 }
 
@@ -95,7 +96,8 @@ article{
 
 .destacados img {
     margin-top: 10px;
-    width: 310px;
+    /*width: 310px;*/
+    width: 90%;
 }
 .destacados h3 {
     margin: 0;
@@ -106,7 +108,6 @@ article{
     display: inline-block;    
     padding: 10px 30px;
     color: #fff;
-    font-size: 15px;
     border: 1px solid #fff;
     margin: 10px 0;
 }
@@ -120,8 +121,8 @@ article{
 }
 .principal-container {
     background: #4b4b4d;
-    width: 600px;
-    margin: 0 auto;
+    width: 60%; /* ocupará el 60% del espacio */
+    margin: 0 auto; /* sin margen por arriba y abajo (lo darán las fotos) y centrado verticalmente */
     padding-top: 1px;
     padding-bottom: 1px;
 }
@@ -141,7 +142,6 @@ article{
 }
 .articulo p {
     margin: 0 auto;
-    font-size: 14px;
 }
 .articulo a {
     color: #ffffff;
@@ -152,13 +152,37 @@ article{
 footer {
     background: #4b4b4d;
     height: 70px;
-    font-size: 12px;
+    font-size: 1em;
 }
 .footer-container {
     width: 60%;
+    height: 100%;
     margin: auto;
     display: flex; /* Posiciona los elementos uno al lado del otro */
     align-items: center; /* Alinea los elementos en el centro */
     justify-content: space-between; /* distribuye en el espacio */
     color: #e6e7e9;
+}
+/* Adaptación Responsive según medida de pantalla */ 
+@media (max-width: 700px) {
+    body {
+        font-size: 14px; /* Reducimos el tamaño de fuente por defecto */
+
+    } /* Cambia el color para reconocer el tamaño mientras se hacen pruebas */
+    .container {
+        vertical-align: middle
+    }
+    .destacados {
+        grid-template-columns: repeat(2, 1fr); /* para dispositivos pequeños posiciona las celdas de la rejilla en dos columnas */
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        font-size: 10px; /* Reducimos el tamaño de fuente por defecto */
+    }
+
+    .destacados {
+        grid-template-columns: 1fr; /* para dispositivos pequeños posiciona las celdas de la rejilla en una columna */
+    }
 }
