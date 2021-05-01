@@ -168,10 +168,8 @@ footer {
     body {
         font-size: 14px; /* Reducimos el tamaño de fuente por defecto */
 
-    } /* Cambia el color para reconocer el tamaño mientras se hacen pruebas */
-    .container {
-        vertical-align: middle
-    }
+    } 
+    
     .destacados {
         grid-template-columns: repeat(2, 1fr); /* para dispositivos pequeños posiciona las celdas de la rejilla en dos columnas */
     }
